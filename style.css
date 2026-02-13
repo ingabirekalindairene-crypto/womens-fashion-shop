@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #F5F0E6; /* Cream background */
+}
+
+/* HEADER */
+header {
+    background: #4B2E2B; /* Dark chocolate */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #F5F0E6;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #E8D8C3;
+}
+
+/* HERO SECTION */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background: #E8D8C3; /* Soft beige */
+}
+
+.hero h2 {
+    font-size: 32px;
+    color: #4B2E2B;
+}
+
+.hero p {
+    color: #7B4F3A;
+}
+
+/* PRODUCTS */
+#products {
+    padding: 40px;
+}
+
+#products h2 {
+    color: #4B2E2B;
+}
+
+.grid {
+    column-count: 4;
+    column-gap: 20px;
+}
+
+.card {
+    background: white;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    display: inline-block;
+    width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #4B2E2B;
+}
+
+.price {
+    color: #7B4F3A;
+    font-weight: bold;
+}
+
+/* ABOUT & CONTACT */
+#about, #contact {
+    padding: 40px;
+    background: white;
+    margin-top: 30px;
+    border-top: 3px solid #4B2E2B;
+}
+
+#about h2, #contact h2 {
+    color: #4B2E2B;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background: #4B2E2B;
+    color: #F5F0E6;
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+    .grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        column-count: 1;
+    }
+}
